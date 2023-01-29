@@ -65,7 +65,7 @@ def reset_transaction(trx: Transaction) -> None:
         confirm = input('Apakah Anda yakin? [y/n]: ')
     
     if confirm == 'y':
-        trx.clear_transaction()
+        trx.reset_transaction()
 
 def check_order(trx: Transaction) -> None:
     if trx.check_order():
